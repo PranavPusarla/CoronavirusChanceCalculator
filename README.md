@@ -5,11 +5,11 @@ COVID-19 (Coronavirus Disease) has recently caused a global pandemic resulting i
 
 ## Technologies/Frameworks/Libraries Used
 * Python
-  * Numpy
-  * Pandas
-  * Sklearn
-  * Pytorch
-* HTML
-* CSS
+* Numpy
+* Pandas
+* Sklearn
+* Django
+* Swift
 
 ## How it works
+A user is approached with a coronavirus testing form asking over 20 different questions. Each of these questions are different features used in training the ML model. This data is then sent back to a custom-made API using Django. Using clinical data from testing done over the nation, the machine learning model is then trained through two different methods: extreme and light gradient boosting. When provided a test input (which is the user data), the model combines the chances of the two methods to result in one weighted probability. The probability is then stored in a SQLite database where it is sent back and presented to the user in a tidy format.
